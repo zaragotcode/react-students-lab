@@ -2,10 +2,16 @@
 
 function Score(props) {
   return (
-    <div>
-      <p>Date: {props.date}</p>
-      <p>Final Score: {props.score}</p>
-    </div>
+    <>
+      <ul>
+      {props.scores.map(score => (
+        <li>
+          <p>Date: {score.date}</p>
+          <p>Final Score: {score.score}</p>
+        </li>
+      ))}
+      </ul>
+    </>
   )
 }
 
