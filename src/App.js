@@ -1,14 +1,13 @@
 import './App.css';
 import { studentData } from './data/data';
-import Students from './data/Students';
-import { useState } from 'react';
+import Student from './data/Student';
 
 function App() {
-  const [students, setStudents] = useState(studentData)
-  
+  let students = studentData
+
   return (
     <div>
-      <Students student={studentData}/>
+      <Student students={students}/>
     </div>
   );
 }
