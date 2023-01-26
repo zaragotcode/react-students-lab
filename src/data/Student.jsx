@@ -8,7 +8,7 @@ const Student = (props) => {
           <li>
             <p>{student.name}</p>
             <p>{student.bio}</p>
-            <Score score={student}/>
+            <Score score={student.scores}/>
           </li>
         ))}
       </ul>

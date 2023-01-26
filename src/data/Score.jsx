@@ -1,12 +1,11 @@
 
 
 function Score(props) {
-
   return (
-  <div>
+    <div>
       <p>Date: {props.date}</p>
       <p>Final Score: {props.score}</p>
-  </div>
+    </div>
   )
 }
 
